@@ -12,12 +12,11 @@ router.get("/", (req, res, next) => {
       return console.error(err);
     } else {
       console.log(favoriteList);
-      /*
-      res.render('favorite/index',{
-          title:'Favourite Things',
-          favoriteList: favoriteList
+
+      res.render("favorite/index", {
+        title: "Favourite Things",
+        favoriteList: favoriteList
       });
-      */
     }
   });
 });
